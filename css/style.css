@@ -25,7 +25,7 @@ section#zen-intro {
 section#zen-intro header {
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  background-color: #31c6db;
+  color: #fff;
 }
 
 #zen-intro h1 {
@@ -41,7 +41,11 @@ section#zen-intro header {
 }
 
 #zen-summary {
-  background-color: #31c6db;
+  color: #fff;
+}
+
+#zen-summary a {
+  color: #fff;
 }
 
 #zen-summary p {
@@ -52,6 +56,7 @@ section#zen-intro header {
 #zen-preamble {
   padding: 50px 100px;
   color: #fff;
+  background: linear-gradient(#0b2c40, #bdbdbd);
 }
 
 #zen-preamble h3 {
@@ -69,29 +74,37 @@ section#zen-intro header {
   margin: 0 10% 0;
   float: left;
   background-color: #bdbdbd;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 div[role="main"] > div[role="article"] {
   padding: 50px;
+  margin: 50px 0;
 }
 
 div[role="main"] > div[role="article"]:hover {
   background-color: 
 #545454;
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+div[role="main"] > div[role="article"]:hover a {
+  color: #fff;
 }
 
 .sidebar {
-  float: right;
-  padding-right: 2%;
+  margin-top: 25px;
+  margin-left: 80%;
 }
 
 div[class^="design"] h3 {
-  text-align: center;
+  text-align: left;
 }
 
-nav[role="navigation"] li {
+h3.select + nav[role="navigation"] li {
   display: block;
   background-color: #ffb732;
   margin: 10px;
@@ -102,7 +115,7 @@ nav[role="navigation"] li {
   text-align: center;
 }
 
-nav[role="navigation"] li:hover {
+h3.select + nav[role="navigation"] li:hover {
   background-color: #cc8400;
   height: 220px;
   width: 220px;
@@ -110,20 +123,28 @@ nav[role="navigation"] li:hover {
   line-height: 220px;
 }
 
-nav[role="navigation"] li.next {
-  background-color: #cc8400;
+#design-archives {
+  margin-top: 100px;
 }
 
-nav[role="navigation"] li.viewall {
-  background-color: #cc8400;
+#zen-resources {
+  margin-top: 50px;
 }
 
-nav[role="navigation"] li.next:hover {
-  background-color: #996300;
+footer {
+  height: 200px;
+  background: linear-gradient(#bdbdbd, #f6efe5);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 0 30%;
 }
 
-nav[role="navigation"] li.viewall:hover {
-  background-color: #996300;
+footer a {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* override css for mobile browsers */
