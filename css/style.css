@@ -154,13 +154,131 @@ footer a {
 	}
   
   section#zen-intro {
-    background-color: #31c6db;
     width: 100%;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-align: center;
     float: none;
-    height: auto;
+  }
+  
+  section#zen-intro header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+  }
+  
+  #zen-intro h1 {
+    font-size: 25px;
+  }
+
+  #zen-intro h2 {
+    font-size: 80px;
+  }
+  
+  #zen-preamble {
+    padding: 10px;
   }
   
   #zen-supporting {
+    width: 100%;
+    margin: 0;
+    background-color: #bdbdbd;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  div[role="main"] > div[role="article"] {
+    padding: 25px;
+    margin: 25px 0;
+  }
+  
+  .sidebar {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  
+  div[class^="design"] h3 {
+    text-align: center;
+  }
+  
+  #design-archives {
+    text-align: center;
+  }
+
+  h3.select + nav[role="navigation"] li {
+    background-color: #f6efe5;
+    margin: 0;
     height: auto;
+    width: 100%;
+    border-radius: 0;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  h3.select + nav[role="navigation"] li:hover {
+    background-color: #f6efe5;
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #zen-resources {
+    text-align: center;
+  }
+  
+  footer {
+    height: auto;
+    background: linear-gradient(#bdbdbd, #f6efe5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0;
+  }
+  
+  footer a {
+    text-align: center;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    margin: 0 9px 75px;;
+    padding: 10px;
+  }
+}
+
+@media all and (min-width:400px) and (max-width:700px) {
+  .sidebar {
+    margin-left: 70%;
+  }
+  
+  #zen-supporting {
+    margin: 0 5% 25px;
+  }
+  
+  section#zen-intro {
+    margin: 0 5% 0;
+  }
+  
+  #zen-preamble {
+    padding: 25px 25px;
+  }
+}
+
+@media all and (min-width:700px) and (max-width:1000px) {
+  .sidebar {
+    margin-left: 75%;
+  }
+  
+  #zen-supporting {
+    margin: 0 8% 25px;
+  }
+  
+  section#zen-intro {
+    margin: 0 8% 0;  
+  }
+  
+  #zen-preamble {
+    padding: 25px 25px;
   }
 }
